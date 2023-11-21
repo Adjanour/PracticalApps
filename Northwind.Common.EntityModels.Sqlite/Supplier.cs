@@ -11,8 +11,9 @@ namespace Packt.Shared;
 public partial class Supplier
 {
     [Key]
-    public long SupplierId { get; set; }
+    public int SupplierId { get; set; }
 
+    [Required]
     [Column(TypeName = "nvarchar (40)")]
     [StringLength(40)]
     public string CompanyName { get; set; } = null!;
