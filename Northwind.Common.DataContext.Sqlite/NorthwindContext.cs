@@ -50,8 +50,9 @@ public partial class NorthwindContext : DbContext
             {
                 path = Path.Combine("..", "Northwind.db");
             }
+            optionsBuilder.UseSqlite($"Filename={path}");
         }
-         optionsBuilder.UseSqlite("Filename={path}");
+         
     }
         
 
