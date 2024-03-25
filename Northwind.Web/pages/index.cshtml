@@ -1,11 +1,10 @@
-﻿
-@page
-@fucntions
+﻿@page
+@functions
 {
     public string? DayName {get;set;}
     public void OnGet()
     {
-        DayName = DateTime.Now.ToString("dddd");
+        Model.DayName = DateTime.Now.ToString("dddd");
     }
 }
 <!doctype html>
